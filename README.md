@@ -1,3 +1,5 @@
+![Icon](https://raw.githubusercontent.com/Franklin89/OTA-Library/master/docs/ota.png)
+
 # OTA-Library
 
 ## Build Status
