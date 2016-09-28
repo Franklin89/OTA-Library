@@ -1,0 +1,14 @@
+branches:
+    only:
+    - master
+
+assembly_info:
+patch: false
+
+configuration: Release
+
+build_script:
+- ps: .\build.ps1
+
+test: off
+skip_tags: true
