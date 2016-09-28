@@ -1,0 +1,39 @@
+namespace MLSoftware.OTA
+{
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Xsd2Code", "4.2.0.31")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.opentravel.org/OTA/2003/05")]
+    public enum BookingRulesTypeBookingRuleAdditionalRuleAdditionalRule
+    {
+        
+        /// <remarks/>
+        IsCancelable,
+        
+        /// <remarks/>
+        IsModifiable,
+        
+        /// <remarks/>
+        IsRefundable,
+        
+        /// <remarks/>
+        NotCancelable,
+        
+        /// <remarks/>
+        NotModifiable,
+        
+        /// <remarks/>
+        NotRefundable,
+        
+        /// <remarks/>
+        IsCommissionable,
+        
+        /// <remarks/>
+        NotCommissionable,
+        
+        /// <remarks/>
+        CertificateRequired,
+        
+        /// <remarks/>
+        ID_Required,
+    }
+}
