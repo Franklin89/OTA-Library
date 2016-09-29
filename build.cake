@@ -14,7 +14,7 @@ string fullVersion = string.Empty;
 //////////////////////////////////////////////////////////////////////
 // SETUP / TEARDOWN
 //////////////////////////////////////////////////////////////////////
-Setup(context => 
+Setup(context =>
 {
 	var APPVEYOR_BUILD_NUMBER = (context.EnvironmentVariable("APPVEYOR_BUILD_NUMBER") ?? "9999");
 	fullVersion = version + "-alpha-" + String.Format("{0:0000}", int.Parse(APPVEYOR_BUILD_NUMBER));
@@ -105,7 +105,7 @@ Task("Upload-AppVeyor-Artifacts")
     .WithCriteria(AppVeyor.IsRunningOnAppVeyor)
     .Does(() =>
 {
-    var packages = GetFiles("./**/*.nupkg");
+    var packages = GetFiles("./build/*.nupkg");
     foreach(var package in packages)
     {
         AppVeyor.UploadArtifact(package.GetDirectory().FullPath);
