@@ -1,21 +1,26 @@
-{
+﻿{
   "version": "0.1.0-*",
   "title": "OTA-Library",
   "description": "The OTA-Library is a collection for .Net classes that can be used to implement interfaces that comply to the Open Travel Alliance.",
   "language": "en-US",
-  "authors": [ "Franklin89" ],
+  "authors": [
+    "Franklin89"
+  ],
   "packOptions": {
-    "owners": [ "Franklin89" ],
+    "owners": [
+      "Franklin89"
+    ],
     "summary": "The OTA-Library is a collection for .Net classes that can be used to implement interfaces that comply to the Open Travel Alliance.",
-    "tags": [ "OTA opentravel" ],
+    "tags": [
+      "OTA opentravel"
+    ],
     "projectUrl": "https://github.com/Franklin89/OTA-Library",
     "licenseUrl": "https://github.com/Franklin89/OTA-Library/blob/master/LICENSE",
     "iconUrl": "https://raw.githubusercontent.com/Franklin89/OTA-Library/master/docs/ota.png"
   },
   "frameworks": {
     "net4.5": {
-      "dependencies": {
-      },
+      "dependencies": {},
       "frameworkAssemblies": {
         "System.Data": "",
         "System.Data.DataSetExtensions": "",
