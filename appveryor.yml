@@ -2,13 +2,16 @@ branches:
     only:
     - master
 
-assembly_info:
-patch: false
-
-configuration: Release
-
-build_script:
-- ps: .\build.ps1
-
 test: off
-skip_tags: true
+
+before build:
+	- dotnet restore
+
+build:
+	- dotnet build
+
+after_test:
+  - dotnet pack .\src\* --configuration=Release --output=".\Nuget"
+
+artifacts:
+  - path: .\Nuget\*.nupkg
