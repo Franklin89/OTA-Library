@@ -105,11 +105,7 @@ Task("Upload-AppVeyor-Artifacts")
     .WithCriteria(AppVeyor.IsRunningOnAppVeyor)
     .Does(() =>
 {
-    var packages = GetFiles("./build/*.nupkg");
-    foreach(var package in packages)
-    {
-        AppVeyor.UploadArtifact(package.GetDirectory().FullPath);
-    }
+    AppVeyor.UploadArtifact("./build/OTA-Library" + fullVersion + ".nupkg");
 });
 
 Task("Default")
