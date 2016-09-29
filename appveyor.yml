@@ -4,14 +4,14 @@ branches:
 
 test: off
 
-before build:
-	- dotnet restore
+before_build:
+  - dotnet restore
 
 build:
 	- dotnet build
 
-after_test:
-  - dotnet pack .\src\* --configuration=Release --output=".\Nuget"
+after_build:
+	- dotnet pack .\src\* --configuration=Release --output=".\Nuget"
 
 artifacts:
   - path: .\Nuget\*.nupkg
