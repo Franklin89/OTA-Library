@@ -59,7 +59,7 @@ Task("Patch-Project-Json")
 });
 
 Task("Package-Restore")
-    .IsDependentOn("Clean")
+    .IsDependentOn("Patch-Project-Json")
     .Does(() =>
 {
     var projects = GetFiles("./**/project.json");
