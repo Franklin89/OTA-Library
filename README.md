@@ -4,7 +4,7 @@
 
 ## Build Status
 
-_Coming soon_
+[![Build status](https://ci.appveyor.com/api/projects/status/4ermxqkhj0ev4687?svg=true)](https://ci.appveyor.com/project/Franklin89/ota-library)
 
 ## What is OTA-Library?
 
