@@ -105,7 +105,7 @@ Task("Upload-AppVeyor-Artifacts")
     .WithCriteria(AppVeyor.IsRunningOnAppVeyor)
     .Does(() =>
 {
-    AppVeyor.UploadArtifact("./build/OTA-Library" + fullVersion + ".nupkg");
+    AppVeyor.UploadArtifact("./build/OTA-Library." + fullVersion + ".nupkg");
 });
 
 Task("Default")
