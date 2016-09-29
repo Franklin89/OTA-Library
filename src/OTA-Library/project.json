@@ -1,14 +1,17 @@
-﻿{
-  "version": "1.0.0-*",
+{
+  "version": "0.1.0-*",
   "dependencies": {
-    "NETStandard.Library": "1.6.0"
   },
-
   "frameworks": {
-    "netstandard1.6": {
-      "imports": "dnxcore50",
+    "net4.5": {
       "dependencies": {
-        "Microsoft.CSharp": "4.0.1",
+      },
+      "frameworkAssemblies": {
+        "System.Data": "",
+        "System.Data.DataSetExtensions": "",
+        "System.Net.Http": "",
+        "System.Xml": "",
+        "System.Xml.Linq": ""
       }
     }
   }
