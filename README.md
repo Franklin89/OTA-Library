@@ -16,4 +16,10 @@ _Coming soon_
 
 ## Where can I get it?
 
-_Coming soon_
+Get it from NuGet. You can simply install it with the Package Manager console:
+
+**Currently still in prerelease so don't forget the _-pre_ flag.**
+
+```
+PM> Install-Package OTA-Library -Pre
+```
