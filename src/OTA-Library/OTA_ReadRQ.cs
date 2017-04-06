@@ -21,54 +21,56 @@ namespace MLSoftware.OTA
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.opentravel.org/OTA/2003/05")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.opentravel.org/OTA/2003/05", IsNullable=false)]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true, Namespace = "http://www.opentravel.org/OTA/2003/05")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace = "http://www.opentravel.org/OTA/2003/05", IsNullable = false)]
     public partial class OTA_ReadRQ
     {
-        
+
         private List<SourceType> _pOS;
-        
+
         private UniqueID_Type _uniqueID;
-        
+
         private OTA_ReadRQReadRequests _readRequests;
-        
+
         private string _echoToken;
-        
+
         private System.DateTime _timeStamp;
-        
+
         private MessageAcknowledgementTypeTarget _target;
-        
+
         private string _targetName;
-        
+
         private decimal _version;
-        
+
         private string _transactionIdentifier;
-        
+
         private string _sequenceNmbr;
-        
+
         private MessageAcknowledgementTypeTransactionStatusCode _transactionStatusCode;
-        
+
         private bool _retransmissionIndicator;
-        
+
         private string _correlationID;
-        
+
         private string _primaryLangID;
-        
+
         private string _altLangID;
-        
+
         private string _reqRespVersion;
-        
+
         private string _reservationType;
-        
+
         private bool _returnListIndicator;
-        
+
         private bool _moreIndicator;
-        
+
         private string _moreDataEchoToken;
-        
+
         private string _maxResponses;
-        
-        [System.Xml.Serialization.XmlArrayItemAttribute("Source", IsNullable=false)]
+
+        private string _schemaLocation;
+
+        [System.Xml.Serialization.XmlArrayItemAttribute("Source", IsNullable = false)]
         public List<SourceType> POS
         {
             get
@@ -80,7 +82,7 @@ namespace MLSoftware.OTA
                 this._pOS = value;
             }
         }
-        
+
         public UniqueID_Type UniqueID
         {
             get
@@ -92,7 +94,7 @@ namespace MLSoftware.OTA
                 this._uniqueID = value;
             }
         }
-        
+
         public OTA_ReadRQReadRequests ReadRequests
         {
             get
@@ -104,7 +106,7 @@ namespace MLSoftware.OTA
                 this._readRequests = value;
             }
         }
-        
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string EchoToken
         {
@@ -117,7 +119,7 @@ namespace MLSoftware.OTA
                 this._echoToken = value;
             }
         }
-        
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public System.DateTime TimeStamp
         {
@@ -130,7 +132,7 @@ namespace MLSoftware.OTA
                 this._timeStamp = value;
             }
         }
-        
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public MessageAcknowledgementTypeTarget Target
         {
@@ -143,7 +145,7 @@ namespace MLSoftware.OTA
                 this._target = value;
             }
         }
-        
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string TargetName
         {
@@ -156,7 +158,7 @@ namespace MLSoftware.OTA
                 this._targetName = value;
             }
         }
-        
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public decimal Version
         {
@@ -169,7 +171,7 @@ namespace MLSoftware.OTA
                 this._version = value;
             }
         }
-        
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string TransactionIdentifier
         {
@@ -182,8 +184,8 @@ namespace MLSoftware.OTA
                 this._transactionIdentifier = value;
             }
         }
-        
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="nonNegativeInteger")]
+
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "nonNegativeInteger")]
         public string SequenceNmbr
         {
             get
@@ -195,7 +197,7 @@ namespace MLSoftware.OTA
                 this._sequenceNmbr = value;
             }
         }
-        
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public MessageAcknowledgementTypeTransactionStatusCode TransactionStatusCode
         {
@@ -208,7 +210,7 @@ namespace MLSoftware.OTA
                 this._transactionStatusCode = value;
             }
         }
-        
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool RetransmissionIndicator
         {
@@ -221,7 +223,7 @@ namespace MLSoftware.OTA
                 this._retransmissionIndicator = value;
             }
         }
-        
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string CorrelationID
         {
@@ -234,8 +236,8 @@ namespace MLSoftware.OTA
                 this._correlationID = value;
             }
         }
-        
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="language")]
+
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "language")]
         public string PrimaryLangID
         {
             get
@@ -247,8 +249,8 @@ namespace MLSoftware.OTA
                 this._primaryLangID = value;
             }
         }
-        
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="language")]
+
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "language")]
         public string AltLangID
         {
             get
@@ -260,7 +262,7 @@ namespace MLSoftware.OTA
                 this._altLangID = value;
             }
         }
-        
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string ReqRespVersion
         {
@@ -273,7 +275,7 @@ namespace MLSoftware.OTA
                 this._reqRespVersion = value;
             }
         }
-        
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string ReservationType
         {
@@ -286,7 +288,7 @@ namespace MLSoftware.OTA
                 this._reservationType = value;
             }
         }
-        
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool ReturnListIndicator
         {
@@ -299,7 +301,7 @@ namespace MLSoftware.OTA
                 this._returnListIndicator = value;
             }
         }
-        
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public bool MoreIndicator
         {
@@ -312,7 +314,7 @@ namespace MLSoftware.OTA
                 this._moreIndicator = value;
             }
         }
-        
+
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string MoreDataEchoToken
         {
@@ -325,8 +327,8 @@ namespace MLSoftware.OTA
                 this._moreDataEchoToken = value;
             }
         }
-        
-        [System.Xml.Serialization.XmlAttributeAttribute(DataType="positiveInteger")]
+
+        [System.Xml.Serialization.XmlAttributeAttribute(DataType = "positiveInteger")]
         public string MaxResponses
         {
             get
@@ -336,6 +338,19 @@ namespace MLSoftware.OTA
             set
             {
                 this._maxResponses = value;
+            }
+        }
+
+        [XmlAttribute(AttributeName = "schemaLocation", Namespace = "http://www.w3.org/2001/XMLSchema-instance")]
+        public string SchemaLocation
+        {
+            get
+            {
+                return this._schemaLocation;
+            }
+            set
+            {
+                this._schemaLocation = value;
             }
         }
     }
